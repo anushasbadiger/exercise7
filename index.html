@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Book-store</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="flex items-center justify-between flex-wrap bg-orange-700 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight">Book Store</span>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Docs
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Old books
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+            Blog
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="question-container mx-9 mt-5 rounded-lg px-9 bg-slate-950">
+      <div class="heading text-red-500">Fetch Books API</div>
+      <div class=" text-sky-400 mb-5 mt-2">
+          Develop a Web Application that uses AJAX to fetch JSON data from a remote server 
+          and displays it on a web page. Fetch a list of fictional books from a JSON API and 
+          display them on the webpage.The index.html file contains a button labeled "Fetch Books" 
+          and a div element with the id "bookList" where we will display the list of books.
+          Use JavaScript to add a click event listener to the "Fetch Books" button. When the button 
+          is clicked, an AJAX request is made to fetch the JSON data from a local file called books.json 
+          (you can replace it with your API URL).
+          Once the JSON data is fetched successfully, it's parsed, and the displayBooks function is 
+          called to render the list of books on the webpage
+      </div>
+      <button class="bg-slate-100 mb-5 p-2 text-sky-800" id="fetchButton" onclick="dont_dothis()">Fetch Data</button>
+      
+    <div id="drop" hidden="true" class="mb-5 p-2"><label for="sort_by" class="text-sky-600">Sort it by:</label><select for="sort_by" id="sort_by" onclick="sort_it_out()">
+      <option value="Rank">Rank</option>
+      <option value="Alphabets">Alphabet</option>
+    </select></div>
+    
+    <div id="drop2" hidden="true" class="mb-5 p-2"><label for="filter_it" class="text-sky-600">Filter by:</label>
+      <select for="sort_by" id="filter_it" onclick="filter_it_out()">
+      <option value="none">none</option>
+      <option value="above_499">Above 499rs</option>
+      <option value="below_500">Below 500</option>
+    </select></div>
+  </div>
+    <div id="con-2" class="px-14 gap-y-4">
+      
+    </div>
+    <!-- <button onclick="dont_dothis()" >Fetch Da Books </button> -->
+  </main>
+  <footer>
+
+  </footer>
+  <script src="test1.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</body>
+
+</html>
